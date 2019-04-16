@@ -86,7 +86,15 @@ var devMountainClassPet = dog.name;//Code Here
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in
 
-// Code here
+function nameCheck(name) {
+  if (name === "Steven") {
+    return 'What is up Steven?';
+  } if else (name === 'Bryan') {
+    return 'Hey Bryan!';
+  } else {
+    return `Cool name, ${name}`
+  }
+}// Code here
 
 //////////////////PROBLEM 11////////////////////
 
