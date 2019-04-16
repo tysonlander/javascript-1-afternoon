@@ -68,7 +68,7 @@ var groceries = ["apples", "milk", "eggs", "bread"];//Code Here
 var dog = {
   name: "spot",
   color: "golden",
-  age: 5
+  age: 5,
   goodBoy: true
 }//Code Here
 
@@ -87,14 +87,14 @@ var devMountainClassPet = dog.name;//Code Here
 // with NAMEPARAM being the name parameter being passed in
 
 function nameCheck(name) {
-  if (name === "Steven") {
-    return 'What is up Steven?';
-  } if else (name === 'Bryan') {
-    return 'Hey Bryan!';
+  if(name === "Steven") {
+    return 'What is up Steven?'
+  } else if (name === 'Bryan') {
+    return 'Hey Bryan!'
   } else {
     return `Cool name, ${name}`
   }
-}// Code here
+} // Code here
 
 //////////////////PROBLEM 11////////////////////
 
@@ -102,12 +102,14 @@ function nameCheck(name) {
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(num1, num2){
+  return num1 + num2;
+}//Code Here
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+var mathSum = add(3, 4);//Code Here
 
 //////////////////PROBLEM 12////////////////////
 
@@ -118,7 +120,17 @@ function nameCheck(name) {
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder(color) {
+  if(color === "red") {
+    return 'red is a great color';
+  } else if (color === 'green') {
+    return 'green is a solid favorite color'
+  } else if (color === 'black') {
+    return 'so trendy'
+  } else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}   // Code here
 
 //////////////////PROBLEM 13////////////////////
 
@@ -142,16 +154,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
