@@ -46,7 +46,9 @@ function greeting(name) {
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-//Code Here
+var newGreeting = function(name) {
+  return "Hello, " + name;
+}//Code Here
 
 
 //////////////////PROBLEM 8////////////////////
@@ -54,7 +56,7 @@ function greeting(name) {
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here
+var groceries = ["apples", "milk", "eggs", "bread"];//Code Here
 
 //////////////////PROBLEM 9////////////////////
 
@@ -63,12 +65,17 @@ function greeting(name) {
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+var dog = {
+  name: "spot",
+  color: "golden",
+  age: 5
+  goodBoy: true
+}//Code Here
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+var devMountainClassPet = dog.name;//Code Here
 
 //////////////////PROBLEM 10////////////////////
 
